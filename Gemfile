@@ -8,10 +8,12 @@ gem 'rails', '3.0.5'
 gem 'sqlite3'
 gem 'haml-rails'
 
+
 group :development do
   gem 'wirble'
   gem 'hirb'
   gem 'awesome_print'
+  gem "nifty-generators"
 end
 
 # Use unicorn as the web server
