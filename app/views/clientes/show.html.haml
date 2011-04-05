@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Nombre:
+  = @cliente.nombre
+%p
+  %b Fecha alta:
+  = @cliente.fecha_alta
+%p
+  %b Morosidad:
+  = @cliente.morosidad
+
+= link_to 'Edit', edit_cliente_path(@cliente)
+\|
+= link_to 'Back', clientes_path
