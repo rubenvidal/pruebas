@@ -1,4 +1,8 @@
 Pruebas::Application.routes.draw do
+
+  get "/trabajos" => "trabajos#index"
+  get "/trabajos/:id" => "trabajos#show", :as => :trabajo
+
   resources :clientes
   root :to => "clientes#index"
 
